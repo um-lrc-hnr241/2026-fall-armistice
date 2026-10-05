@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 :root {
   --text: #1f2933;
   --muted: #52606d;
@@ -5,7 +7,7 @@
   --accent: #1d5fa8;
   --border: #d9d4c7;
   --baby-blue: #d9efff;
-  --max-width: 46rem;
+  --max-width: 58rem;
 }
 
 *,
@@ -26,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Lora", Georgia, serif;
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text);
@@ -38,7 +40,7 @@ main,
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.5rem 1.25rem;
+  padding: 2rem 1.5rem;
 }
 
 .site-header {
@@ -79,8 +81,15 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+}
+
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 
