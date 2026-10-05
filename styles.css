@@ -1,9 +1,10 @@
 :root {
   --text: #1f2933;
   --muted: #52606d;
-  --background: #fdfcf9;
+  --background: #f5efdf;
   --accent: #1d5fa8;
   --border: #d9d4c7;
+  --baby-blue: #d9efff;
   --max-width: 46rem;
 }
 
@@ -31,6 +32,7 @@ main,
 }
 
 .site-header {
+  background: var(--baby-blue);
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
