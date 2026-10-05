@@ -14,6 +14,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -153,6 +163,29 @@ video {
 .card h3,
 .notice h2 {
   margin-top: 0;
+}
+
+.document-dropdown {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  background: #fffdf8;
+}
+
+.document-dropdown summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.document-dropdown summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.document-dropdown span {
+  color: var(--muted);
 }
 
 .member-list {
